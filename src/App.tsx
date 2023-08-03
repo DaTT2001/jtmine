@@ -6,7 +6,8 @@ import NoPage from "./pages/NoPage/NoPage"
 import Login from "./pages/Login/Login"
 import Admin from "./pages/Admin/Admin"
 import Layout from "./pages/Layout"
-
+import Tutorial from "./pages/Tutorial/Tutorial"
+import BanList from "./pages/BanList/BanList"
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
           {/* Nguoi dung */}
           <Route index path="/" element={<Home />} />
           <Route path='about-us' element={<About />} />
-          {/* <Route path='blog' element={<Blog />} /> */}
+          <Route path='tutorial' element={<Tutorial />} />
+          <Route path='ban-list' element={<BanList />} />
           <Route path='*' element={<NoPage />} />
           <Route path='login' element={<Login />} />
 
